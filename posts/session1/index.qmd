@@ -37,10 +37,13 @@ The Gamma function, denoted as $\Gamma(x)$, extends the factorial function to re
 
 $$\Gamma(x) = \int_0^\infty t^{x-1} e^{-t} \, dt \quad \text{for} \; x > 0$$
 
-**Properties:**
+:::{.callout-important}
+## Properties:
 - **Recurrence Relation**: The Gamma function satisfies the recurrence relation $\Gamma(x+1) = x \Gamma(x)$.
 - **Factorial Relation**: For positive integers $n$, $\Gamma(n) = (n-1)!$.
 - **Reflection Formula**: The Gamma function has the reflection property:
+:::
+
 
  $$
   \Gamma(1-x) \Gamma(x) = \frac{\pi}{\sin(\pi x)}
