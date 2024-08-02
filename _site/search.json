@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Applied_Mathematics",
-    "section": "",
-    "text": "Importance of Special Functions in Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nSyllabus of the Course\n\n\n\n\n\n\nsyllabus\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
     "objectID": "posts/Module-1/index.html",
     "href": "posts/Module-1/index.html",
     "title": "Importance of Special Functions in Engineering",
@@ -75,5 +47,26 @@
     "title": "Importance of Special Functions in Engineering",
     "section": "Summary",
     "text": "Summary\nUnderstanding special functions like Beta and Gamma functions, Legendre’s equations, polynomials, and Rodrigues’ formula is crucial for advanced problem-solving in engineering. These functions provide powerful tools for developing analytical solutions, enhancing computational efficiency, and improving the design and analysis of engineering systems."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Applied Mathematics",
+    "section": "",
+    "text": "Importance of Special Functions in Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nSyllabus of the Course\n\n\n\n\n\n\nsyllabus\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
   }
 ]
