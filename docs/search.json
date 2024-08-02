@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Applied Mathematics",
+    "section": "",
+    "text": "Importance of Special Functions in Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nSyllabus of the Course\n\n\n\n\n\n\nsyllabus\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/session1/index.html",
     "href": "posts/session1/index.html",
     "title": "Beta and Gamma Functions",
@@ -28,74 +35,11 @@
     "text": "Applications in Engineering\nUnderstanding Beta and Gamma functions, and their interrelationship is crucial in many engineering fields:\n\nProbability and Statistics: In reliability engineering and quality control, Beta distributions model the time-to-failure of components.\nStructural Analysis: Gamma functions appear in the solutions of differential equations that describe the behavior of structures under loads.\nFluid Dynamics: Both functions are used in solving problems involving fluid flow and heat transfer.\n\n\nExamples in Structural Analysis\n\nBeam Deflection Analysis:\n\nIn structural engineering, the deflection of beams under various loading conditions can be analyzed using differential equations. The solutions to these differential equations often involve Gamma functions. For instance, the deflection \\(y(x)\\) of a simply supported beam under a uniform load can be expressed in terms of special functions, including Gamma functions, to precisely determine the deflection curve.\n\nVibration Analysis of Structures:\n\nThe natural frequencies and mode shapes of structures such as beams and plates are determined by solving eigenvalue problems involving differential equations. The solutions to these problems often use Gamma functions to express the mode shapes and frequencies analytically. This is crucial for designing structures to avoid resonant frequencies that could lead to failure.\n\n\nThis foundational knowledge of special functions equips engineers with analytical tools to tackle complex problems efficiently and effectively."
   },
   {
-    "objectID": "posts/Module-1/index.html",
-    "href": "posts/Module-1/index.html",
-    "title": "Importance of Special Functions in Engineering",
-    "section": "",
-    "text": "Special functions are mathematical functions that arise frequently in applied mathematics, physics, and engineering. They are solutions to specific types of differential equations and possess unique properties that make them particularly useful in various fields of science and engineering. This module will cover some of the most important special functions, including Beta and Gamma functions, Legendre’s equations and polynomials, and Rodrigues’ formula, with a focus on their applications in Civil Engineering."
-  },
-  {
-    "objectID": "posts/Module-1/index.html#introduction-to-special-functions",
-    "href": "posts/Module-1/index.html#introduction-to-special-functions",
-    "title": "Importance of Special Functions in Engineering",
-    "section": "",
-    "text": "Special functions are mathematical functions that arise frequently in applied mathematics, physics, and engineering. They are solutions to specific types of differential equations and possess unique properties that make them particularly useful in various fields of science and engineering. This module will cover some of the most important special functions, including Beta and Gamma functions, Legendre’s equations and polynomials, and Rodrigues’ formula, with a focus on their applications in Civil Engineering."
-  },
-  {
-    "objectID": "posts/Module-1/index.html#importance-of-special-functions-in-engineering",
-    "href": "posts/Module-1/index.html#importance-of-special-functions-in-engineering",
-    "title": "Importance of Special Functions in Engineering",
-    "section": "Importance of Special Functions in Engineering",
-    "text": "Importance of Special Functions in Engineering\nSpecial functions play a critical role in solving complex problems in engineering. They provide analytical solutions to differential equations that model physical phenomena, which are often more efficient and insightful than numerical methods. Understanding these functions enables engineers to:\n\nSimplify Complex Problems: Special functions can reduce complex engineering problems into more manageable forms.\nDevelop Analytical Solutions: They offer exact solutions to problems, which are crucial for understanding the underlying physics.\nEnhance Computational Efficiency: Utilizing special functions can improve the efficiency of computational algorithms.\nImprove Design and Analysis: In Civil Engineering, for instance, they are used in the analysis of structures, fluid dynamics, and soil mechanics."
-  },
-  {
-    "objectID": "posts/Module-1/index.html#session-1-introduction-to-beta-and-gamma-functions",
-    "href": "posts/Module-1/index.html#session-1-introduction-to-beta-and-gamma-functions",
-    "title": "Importance of Special Functions in Engineering",
-    "section": "Session 1: Introduction to Beta and Gamma Functions",
-    "text": "Session 1: Introduction to Beta and Gamma Functions\n\n1. Beta Function\nThe Beta function, \\(B(x, y)\\), is a special function defined by the integral:\n\\[B(x, y) = \\int_0^1 t^{x-1} (1-t)^{y-1} \\, dt \\quad \\text{for} \\; x, y &gt; 0\\]\nProperties:\n\nSymmetry: \\(B(x, y) = B(y, x)\\)\nRelation to Gamma Function: \\(B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\)\n\nApplications in Civil Engineering:\n\nUsed in statistical distributions that model loads and material properties.\nUseful in solving problems involving probability distributions and expectations.\n\n\n\n2. Gamma Function\nThe Gamma function, \\(\\Gamma(x)\\), generalizes the factorial function to non-integer values and is defined by the integral:\n\\[\\Gamma(x) = \\int_0^\\infty t^{x-1} e^{-t} \\, dt \\quad \\text{for} \\; x &gt; 0\\]\nProperties:\n\nRecurrence Relation: \\(\\Gamma(x+1) = x \\Gamma(x)\\)\nFor positive integers: \\(\\Gamma(n) = (n-1)!\\)\n\nApplications in Civil Engineering:\n\nAppears in the solutions of differential equations modeling structural behavior.\nUsed in reliability analysis and the assessment of risk and safety."
-  },
-  {
-    "objectID": "posts/Module-1/index.html#session-2-legendres-equations-and-polynomials",
-    "href": "posts/Module-1/index.html#session-2-legendres-equations-and-polynomials",
-    "title": "Importance of Special Functions in Engineering",
-    "section": "Session 2: Legendre’s Equations and Polynomials",
-    "text": "Session 2: Legendre’s Equations and Polynomials\n\n1. Legendre’s Equation\nLegendre’s differential equation is a second-order ordinary differential equation given by:\n\\[(1 - x^2) \\frac{d^2 y}{dx^2} - 2x \\frac{dy}{dx} + n(n + 1)y = 0\\]\nLegendre Polynomials:\n\nSolutions to Legendre’s equation are called Legendre polynomials, \\(P_n(x)\\).\nThey are orthogonal polynomials on the interval ([-1, 1]).\n\nApplications in Civil Engineering:\n\nUsed in potential theory, which is fundamental in geotechnics and fluid mechanics.\nEssential in solving boundary value problems in spherical coordinates, relevant to geodesy and structural analysis.\n\n\n\n2. Rodrigues’ Formula\nRodrigues’ formula provides an explicit expression for Legendre polynomials:\n\\[P_n(x) = \\frac{1}{2^n n!} \\frac{d^n}{dx^n} (x^2 - 1)^n\\]\nApplications in Civil Engineering:\n\nSimplifies the computation of Legendre polynomials.\nUseful in approximating solutions to engineering problems involving spherical harmonics and wave equations."
-  },
-  {
-    "objectID": "posts/Module-1/index.html#application-of-special-functions-in-civil-engineering",
-    "href": "posts/Module-1/index.html#application-of-special-functions-in-civil-engineering",
-    "title": "Importance of Special Functions in Engineering",
-    "section": "Application of Special Functions in Civil Engineering",
-    "text": "Application of Special Functions in Civil Engineering\nSpecial functions are integral to various advanced topics in Civil Engineering:\n\nStructural Analysis: Used in solving differential equations that describe the behavior of beams, plates, and shells under various loading conditions.\nFluid Dynamics: Appear in the solutions to Navier-Stokes equations and potential flow problems.\nGeotechnical Engineering: Utilized in modeling soil behavior and solving problems in soil mechanics and foundation engineering.\nEnvironmental Engineering: Important in modeling pollutant dispersion and other environmental processes."
-  },
-  {
-    "objectID": "posts/Module-1/index.html#summary",
-    "href": "posts/Module-1/index.html#summary",
-    "title": "Importance of Special Functions in Engineering",
-    "section": "Summary",
-    "text": "Summary\nUnderstanding special functions like Beta and Gamma functions, Legendre’s equations, polynomials, and Rodrigues’ formula is crucial for advanced problem-solving in engineering. These functions provide powerful tools for developing analytical solutions, enhancing computational efficiency, and improving the design and analysis of engineering systems."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to the “Applied Mathematics for Civil Engineering” course. I am Merina Aruja, a faculty member in the Department of Mathematics with 15 years of experience in teaching and research. This course is designed to equip civil engineering students with essential mathematical tools and techniques necessary for solving complex engineering problems. We will cover a range of topics including special functions, differential equations, and statistical methods, with a focus on practical applications in structural analysis, fluid dynamics, and material science. My aim is to provide you with a solid mathematical foundation to support your engineering studies and future career. About this blog"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Applied Mathematics",
-    "section": "",
-    "text": "Importance of Special Functions in Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nSyllabus of the Course\n\n\n\n\n\n\nsyllabus\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
+    "objectID": "posts/session1/index.html#an-example-of-gamma-function",
+    "href": "posts/session1/index.html#an-example-of-gamma-function",
+    "title": "Beta and Gamma Functions",
+    "section": "An example of Gamma function",
+    "text": "An example of Gamma function\n# import numpy as np\n# import matplotlib.pyplot as plt\n# from scipy.stats import gamma\n\n# # Parameters for the Gamma distribution\n# shape = 2.0  # shape parameter (k)\n# scale = 2.0  # scale parameter (theta)\n\n# # Generate an array of time values\n# time = np.linspace(0, 20, 500)\n\n# # Compute the PDF of the Gamma distribution\n# pdf = gamma.pdf(time, a=shape, scale=scale)\n\n# # Plot the PDF\n# plt.figure(figsize=(10, 6))\n# plt.plot(time, pdf, 'r-', lw=2, label=f'Gamma PDF (shape={shape}, scale={scale})')\n# plt.title('Gamma Distribution: Time-to-Failure of a Structural Component')\n# plt.xlabel('Time')\n# plt.ylabel('Probability Density')\n# plt.legend()\n# plt.grid(True)\n# plt.show()"
   },
   {
     "objectID": "posts/session2/index.html",

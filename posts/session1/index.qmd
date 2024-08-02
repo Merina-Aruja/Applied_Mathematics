@@ -4,6 +4,8 @@ author: "Merina Aruja"
 date: "2024-08-02"
 categories: [session]
 image: "image.jpg"
+execute: 
+  enabled: true
 ---
 
 ## Introduction to the Session
@@ -112,3 +114,31 @@ Understanding Beta and Gamma functions, and their interrelationship is crucial i
    - The natural frequencies and mode shapes of structures such as beams and plates are determined by solving eigenvalue problems involving differential equations. The solutions to these problems often use Gamma functions to express the mode shapes and frequencies analytically. This is crucial for designing structures to avoid resonant frequencies that could lead to failure.
 
 This foundational knowledge of special functions equips engineers with analytical tools to tackle complex problems efficiently and effectively.
+
+## An example of Gamma function
+
+```python
+# import numpy as np
+# import matplotlib.pyplot as plt
+# from scipy.stats import gamma
+
+# # Parameters for the Gamma distribution
+# shape = 2.0  # shape parameter (k)
+# scale = 2.0  # scale parameter (theta)
+
+# # Generate an array of time values
+# time = np.linspace(0, 20, 500)
+
+# # Compute the PDF of the Gamma distribution
+# pdf = gamma.pdf(time, a=shape, scale=scale)
+
+# # Plot the PDF
+# plt.figure(figsize=(10, 6))
+# plt.plot(time, pdf, 'r-', lw=2, label=f'Gamma PDF (shape={shape}, scale={scale})')
+# plt.title('Gamma Distribution: Time-to-Failure of a Structural Component')
+# plt.xlabel('Time')
+# plt.ylabel('Probability Density')
+# plt.legend()
+# plt.grid(True)
+# plt.show()
+```
