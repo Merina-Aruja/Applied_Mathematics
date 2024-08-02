@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: profile.jpg
+image: merina.jpg
 about:
   template: jolla
   links:
@@ -12,8 +12,8 @@ about:
       href: https://linkedin.com
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/Merina-Aruja
 
 ---
 
-About this blog
+Welcome to the "Applied Mathematics for Civil Engineering" course. I am Merina Aruja, a faculty member in the Department of Mathematics with 15 years of experience in teaching and research. This course is designed to equip civil engineering students with essential mathematical tools and techniques necessary for solving complex engineering problems. We will cover a range of topics including special functions, differential equations, and statistical methods, with a focus on practical applications in structural analysis, fluid dynamics, and material science. My aim is to provide you with a solid mathematical foundation to support your engineering studies and future career.

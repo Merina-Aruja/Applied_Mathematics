@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Merina Aruja">
+<meta name="dcterms.date" content="2024-08-02">
 
-<title>About – Applied_Mathematics</title>
+<title>Beta and Gamma Functions – Applied_Mathematics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,18 +69,47 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Applied_Mathematics</span>
     </a>
   </div>
@@ -88,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -109,42 +141,155 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Beta and Gamma Functions</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">session</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Merina Aruja </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 2, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="merina.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><main class="content" id="quarto-document-content">
-<p>Welcome to the “Applied Mathematics for Civil Engineering” course. I am Merina Aruja, a faculty member in the Department of Mathematics with 15 years of experience in teaching and research. This course is designed to equip civil engineering students with essential mathematical tools and techniques necessary for solving complex engineering problems. We will cover a range of topics including special functions, differential equations, and statistical methods, with a focus on practical applications in structural analysis, fluid dynamics, and material science. My aim is to provide you with a solid mathematical foundation to support your engineering studies and future career. About this blog</p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://twitter.com" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="https://linkedin.com" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/Merina-Aruja" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
+
+
+
+<section id="introduction-to-the-session" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-the-session">Introduction to the Session</h2>
+<p>In this session, we will delve into the Beta and Gamma functions, two fundamental special functions widely used in various fields of science and engineering. These functions not only provide elegant solutions to complex integrals but also have profound applications in structural analysis, probability, statistics, and fluid dynamics. Understanding these functions and their properties is crucial for solving advanced engineering problems efficiently. We will explore their definitions, properties, interrelationship, and practical applications, particularly in structural analysis.</p>
+<section id="beta-function" class="level3">
+<h3 class="anchored" data-anchor-id="beta-function">Beta Function</h3>
+<p>The Beta function, denoted as <span class="math inline">\(B(x, y)\)</span>, is a special function defined by the integral:</p>
+<p><span class="math display">\[B(x, y) = \int_0^1 t^{x-1} (1-t)^{y-1} \, dt \quad \text{for} \; x, y &gt; 0\]</span></p>
+<p><strong>Properties:</strong> - <strong>Symmetry</strong>: The Beta function is symmetric in its arguments, meaning <span class="math inline">\(B(x, y) = B(y, x)\)</span>. - <strong>Relation to Gamma Function</strong>: <span class="math inline">\(B(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}\)</span> - <strong>Integral Representation</strong>: The Beta function can also be represented as:</p>
+<p><span class="math display">\[
+  B(x, y) = 2 \int_0^{\frac{\pi}{2}} (\sin \theta)^{2x-1} (\cos \theta)^{2y-1} \, d\theta
+\]</span></p>
+<ul>
+<li><strong>Connection to Binomial Coefficients</strong>: For integers <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+  B(m, n) = \frac{(m-1)!(n-1)!}{(m+n-1)!}
+\]</span></p>
+</section>
+<section id="gamma-function" class="level3">
+<h3 class="anchored" data-anchor-id="gamma-function">Gamma Function</h3>
+<p>The Gamma function, denoted as <span class="math inline">\(\Gamma(x)\)</span>, extends the factorial function to real and complex numbers. It is defined by the integral:</p>
+<p><span class="math display">\[\Gamma(x) = \int_0^\infty t^{x-1} e^{-t} \, dt \quad \text{for} \; x &gt; 0\]</span></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Properties:
 </div>
 </div>
- <!-- /main -->
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Recurrence Relation</strong>: The Gamma function satisfies the recurrence relation <span class="math inline">\(\Gamma(x+1) = x \Gamma(x)\)</span>.</li>
+<li><strong>Factorial Relation</strong>: For positive integers <span class="math inline">\(n\)</span>, <span class="math inline">\(\Gamma(n) = (n-1)!\)</span>.</li>
+<li><strong>Reflection Formula</strong>: The Gamma function has the reflection property:</li>
+</ul>
+</div>
+</div>
+<p><span class="math display">\[
+  \Gamma(1-x) \Gamma(x) = \frac{\pi}{\sin(\pi x)}
+\]</span></p>
+<ul>
+<li><strong>Multiplication Theorem</strong>: For any positive integer <span class="math inline">\(n\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+  \Gamma(nx) = \frac{(2\pi)^{\frac{(1-n)}{2}} n^{nx - \frac{1}{2}}}{n^{x - \frac{1}{2}}} \prod_{k=0}^{n-1} \Gamma \left(x + \frac{k}{n}\right)
+\]</span></p>
+</section>
+<section id="relationship-between-beta-and-gamma-functions" class="level3">
+<h3 class="anchored" data-anchor-id="relationship-between-beta-and-gamma-functions">Relationship Between Beta and Gamma Functions</h3>
+<p>The Beta and Gamma functions are related through the following formula:</p>
+<p><span class="math display">\[B(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}\]</span></p>
+<p>This relationship is particularly useful for converting between the two functions and leveraging their properties in various applications.</p>
+</section>
+</section>
+<section id="detailed-explanation" class="level2">
+<h2 class="anchored" data-anchor-id="detailed-explanation">Detailed Explanation</h2>
+<section id="beta-function-1" class="level3">
+<h3 class="anchored" data-anchor-id="beta-function-1">Beta Function</h3>
+<p>The Beta function arises in the context of evaluating certain integrals that appear in probability and statistics, especially in the computation of Beta distributions. Its symmetry property is given by:</p>
+<p><span class="math display">\[B(x, y) = B(y, x)\]</span></p>
+<p>This property simplifies many calculations where the Beta function is involved.</p>
+</section>
+<section id="gamma-function-1" class="level3">
+<h3 class="anchored" data-anchor-id="gamma-function-1">Gamma Function</h3>
+<p>The Gamma function generalizes the concept of factorials to non-integer values. It plays a crucial role in various branches of mathematics and applied sciences, including complex analysis, combinatorics, and statistical mechanics.</p>
+<p>The recurrence relation:</p>
+<p><span class="math display">\[\Gamma(x+1) = x \Gamma(x)\]</span></p>
+<p>illustrates that the Gamma function at <span class="math inline">\(x+1\)</span> is <span class="math inline">\(x\)</span> times the Gamma function at <span class="math inline">\(x\)</span>, aligning with the factorial function’s property where <span class="math inline">\(n! = n \cdot (n-1)!\)</span>.</p>
+<p>For integer values, the Gamma function simplifies to:</p>
+<p><span class="math display">\[\Gamma(n) = (n-1)!\]</span></p>
+</section>
+<section id="relationship-between-beta-and-gamma-functions-1" class="level3">
+<h3 class="anchored" data-anchor-id="relationship-between-beta-and-gamma-functions-1">Relationship Between Beta and Gamma Functions</h3>
+<p>The relationship:</p>
+<p><span class="math display">\[B(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}\]</span></p>
+<p>is fundamental in various areas, such as statistical distributions and complex integrals. This formula can be derived using integration techniques and properties of the Gamma function.</p>
+</section>
+</section>
+<section id="applications-in-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="applications-in-engineering">Applications in Engineering</h2>
+<p>Understanding Beta and Gamma functions, and their interrelationship is crucial in many engineering fields:</p>
+<ul>
+<li><strong>Probability and Statistics</strong>: In reliability engineering and quality control, Beta distributions model the time-to-failure of components.</li>
+<li><strong>Structural Analysis</strong>: Gamma functions appear in the solutions of differential equations that describe the behavior of structures under loads.</li>
+<li><strong>Fluid Dynamics</strong>: Both functions are used in solving problems involving fluid flow and heat transfer.</li>
+</ul>
+<section id="examples-in-structural-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="examples-in-structural-analysis">Examples in Structural Analysis</h3>
+<ol type="1">
+<li><strong>Beam Deflection Analysis</strong>:
+<ul>
+<li>In structural engineering, the deflection of beams under various loading conditions can be analyzed using differential equations. The solutions to these differential equations often involve Gamma functions. For instance, the deflection <span class="math inline">\(y(x)\)</span> of a simply supported beam under a uniform load can be expressed in terms of special functions, including Gamma functions, to precisely determine the deflection curve.</li>
+</ul></li>
+<li><strong>Vibration Analysis of Structures</strong>:
+<ul>
+<li>The natural frequencies and mode shapes of structures such as beams and plates are determined by solving eigenvalue problems involving differential equations. The solutions to these problems often use Gamma functions to express the mode shapes and frequencies analytically. This is crucial for designing structures to avoid resonant frequencies that could lead to failure.</li>
+</ul></li>
+</ol>
+<p>This foundational knowledge of special functions equips engineers with analytical tools to tackle complex problems efficiently and effectively.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -165,6 +310,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

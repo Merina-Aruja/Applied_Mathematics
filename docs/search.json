@@ -1,24 +1,31 @@
 [
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/session1/index.html",
+    "href": "posts/session1/index.html",
+    "title": "Beta and Gamma Functions",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "In this session, we will delve into the Beta and Gamma functions, two fundamental special functions widely used in various fields of science and engineering. These functions not only provide elegant solutions to complex integrals but also have profound applications in structural analysis, probability, statistics, and fluid dynamics. Understanding these functions and their properties is crucial for solving advanced engineering problems efficiently. We will explore their definitions, properties, interrelationship, and practical applications, particularly in structural analysis.\n\n\nThe Beta function, denoted as \\(B(x, y)\\), is a special function defined by the integral:\n\\[B(x, y) = \\int_0^1 t^{x-1} (1-t)^{y-1} \\, dt \\quad \\text{for} \\; x, y &gt; 0\\]\nProperties: - Symmetry: The Beta function is symmetric in its arguments, meaning \\(B(x, y) = B(y, x)\\). - Relation to Gamma Function: \\(B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\) - Integral Representation: The Beta function can also be represented as:\n\\[\n  B(x, y) = 2 \\int_0^{\\frac{\\pi}{2}} (\\sin \\theta)^{2x-1} (\\cos \\theta)^{2y-1} \\, d\\theta\n\\]\n\nConnection to Binomial Coefficients: For integers \\(m\\) and \\(n\\):\n\n\\[\n  B(m, n) = \\frac{(m-1)!(n-1)!}{(m+n-1)!}\n\\]\n\n\n\nThe Gamma function, denoted as \\(\\Gamma(x)\\), extends the factorial function to real and complex numbers. It is defined by the integral:\n\\[\\Gamma(x) = \\int_0^\\infty t^{x-1} e^{-t} \\, dt \\quad \\text{for} \\; x &gt; 0\\]\n\n\n\n\n\n\nProperties:\n\n\n\n\nRecurrence Relation: The Gamma function satisfies the recurrence relation \\(\\Gamma(x+1) = x \\Gamma(x)\\).\nFactorial Relation: For positive integers \\(n\\), \\(\\Gamma(n) = (n-1)!\\).\nReflection Formula: The Gamma function has the reflection property:\n\n\n\n\\[\n  \\Gamma(1-x) \\Gamma(x) = \\frac{\\pi}{\\sin(\\pi x)}\n\\]\n\nMultiplication Theorem: For any positive integer \\(n\\):\n\n\\[\n  \\Gamma(nx) = \\frac{(2\\pi)^{\\frac{(1-n)}{2}} n^{nx - \\frac{1}{2}}}{n^{x - \\frac{1}{2}}} \\prod_{k=0}^{n-1} \\Gamma \\left(x + \\frac{k}{n}\\right)\n\\]\n\n\n\nThe Beta and Gamma functions are related through the following formula:\n\\[B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\]\nThis relationship is particularly useful for converting between the two functions and leveraging their properties in various applications."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Applied Mathematics",
+    "objectID": "posts/session1/index.html#introduction-to-the-session",
+    "href": "posts/session1/index.html#introduction-to-the-session",
+    "title": "Beta and Gamma Functions",
     "section": "",
-    "text": "Importance of Special Functions in Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nSyllabus of the Course\n\n\n\n\n\n\nsyllabus\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\nNo matching items"
+    "text": "In this session, we will delve into the Beta and Gamma functions, two fundamental special functions widely used in various fields of science and engineering. These functions not only provide elegant solutions to complex integrals but also have profound applications in structural analysis, probability, statistics, and fluid dynamics. Understanding these functions and their properties is crucial for solving advanced engineering problems efficiently. We will explore their definitions, properties, interrelationship, and practical applications, particularly in structural analysis.\n\n\nThe Beta function, denoted as \\(B(x, y)\\), is a special function defined by the integral:\n\\[B(x, y) = \\int_0^1 t^{x-1} (1-t)^{y-1} \\, dt \\quad \\text{for} \\; x, y &gt; 0\\]\nProperties: - Symmetry: The Beta function is symmetric in its arguments, meaning \\(B(x, y) = B(y, x)\\). - Relation to Gamma Function: \\(B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\) - Integral Representation: The Beta function can also be represented as:\n\\[\n  B(x, y) = 2 \\int_0^{\\frac{\\pi}{2}} (\\sin \\theta)^{2x-1} (\\cos \\theta)^{2y-1} \\, d\\theta\n\\]\n\nConnection to Binomial Coefficients: For integers \\(m\\) and \\(n\\):\n\n\\[\n  B(m, n) = \\frac{(m-1)!(n-1)!}{(m+n-1)!}\n\\]\n\n\n\nThe Gamma function, denoted as \\(\\Gamma(x)\\), extends the factorial function to real and complex numbers. It is defined by the integral:\n\\[\\Gamma(x) = \\int_0^\\infty t^{x-1} e^{-t} \\, dt \\quad \\text{for} \\; x &gt; 0\\]\n\n\n\n\n\n\nProperties:\n\n\n\n\nRecurrence Relation: The Gamma function satisfies the recurrence relation \\(\\Gamma(x+1) = x \\Gamma(x)\\).\nFactorial Relation: For positive integers \\(n\\), \\(\\Gamma(n) = (n-1)!\\).\nReflection Formula: The Gamma function has the reflection property:\n\n\n\n\\[\n  \\Gamma(1-x) \\Gamma(x) = \\frac{\\pi}{\\sin(\\pi x)}\n\\]\n\nMultiplication Theorem: For any positive integer \\(n\\):\n\n\\[\n  \\Gamma(nx) = \\frac{(2\\pi)^{\\frac{(1-n)}{2}} n^{nx - \\frac{1}{2}}}{n^{x - \\frac{1}{2}}} \\prod_{k=0}^{n-1} \\Gamma \\left(x + \\frac{k}{n}\\right)\n\\]\n\n\n\nThe Beta and Gamma functions are related through the following formula:\n\\[B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\]\nThis relationship is particularly useful for converting between the two functions and leveraging their properties in various applications."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
+    "objectID": "posts/session1/index.html#detailed-explanation",
+    "href": "posts/session1/index.html#detailed-explanation",
+    "title": "Beta and Gamma Functions",
+    "section": "Detailed Explanation",
+    "text": "Detailed Explanation\n\nBeta Function\nThe Beta function arises in the context of evaluating certain integrals that appear in probability and statistics, especially in the computation of Beta distributions. Its symmetry property is given by:\n\\[B(x, y) = B(y, x)\\]\nThis property simplifies many calculations where the Beta function is involved.\n\n\nGamma Function\nThe Gamma function generalizes the concept of factorials to non-integer values. It plays a crucial role in various branches of mathematics and applied sciences, including complex analysis, combinatorics, and statistical mechanics.\nThe recurrence relation:\n\\[\\Gamma(x+1) = x \\Gamma(x)\\]\nillustrates that the Gamma function at \\(x+1\\) is \\(x\\) times the Gamma function at \\(x\\), aligning with the factorial function’s property where \\(n! = n \\cdot (n-1)!\\).\nFor integer values, the Gamma function simplifies to:\n\\[\\Gamma(n) = (n-1)!\\]\n\n\nRelationship Between Beta and Gamma Functions\nThe relationship:\n\\[B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\]\nis fundamental in various areas, such as statistical distributions and complex integrals. This formula can be derived using integration techniques and properties of the Gamma function."
+  },
+  {
+    "objectID": "posts/session1/index.html#applications-in-engineering",
+    "href": "posts/session1/index.html#applications-in-engineering",
+    "title": "Beta and Gamma Functions",
+    "section": "Applications in Engineering",
+    "text": "Applications in Engineering\nUnderstanding Beta and Gamma functions, and their interrelationship is crucial in many engineering fields:\n\nProbability and Statistics: In reliability engineering and quality control, Beta distributions model the time-to-failure of components.\nStructural Analysis: Gamma functions appear in the solutions of differential equations that describe the behavior of structures under loads.\nFluid Dynamics: Both functions are used in solving problems involving fluid flow and heat transfer.\n\n\nExamples in Structural Analysis\n\nBeam Deflection Analysis:\n\nIn structural engineering, the deflection of beams under various loading conditions can be analyzed using differential equations. The solutions to these differential equations often involve Gamma functions. For instance, the deflection \\(y(x)\\) of a simply supported beam under a uniform load can be expressed in terms of special functions, including Gamma functions, to precisely determine the deflection curve.\n\nVibration Analysis of Structures:\n\nThe natural frequencies and mode shapes of structures such as beams and plates are determined by solving eigenvalue problems involving differential equations. The solutions to these problems often use Gamma functions to express the mode shapes and frequencies analytically. This is crucial for designing structures to avoid resonant frequencies that could lead to failure.\n\n\nThis foundational knowledge of special functions equips engineers with analytical tools to tackle complex problems efficiently and effectively."
   },
   {
     "objectID": "posts/Module-1/index.html",
@@ -70,29 +77,50 @@
     "text": "Summary\nUnderstanding special functions like Beta and Gamma functions, Legendre’s equations, polynomials, and Rodrigues’ formula is crucial for advanced problem-solving in engineering. These functions provide powerful tools for developing analytical solutions, enhancing computational efficiency, and improving the design and analysis of engineering systems."
   },
   {
-    "objectID": "posts/session1/index.html",
-    "href": "posts/session1/index.html",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the “Applied Mathematics for Civil Engineering” course. I am Merina Aruja, a faculty member in the Department of Mathematics with 15 years of experience in teaching and research. This course is designed to equip civil engineering students with essential mathematical tools and techniques necessary for solving complex engineering problems. We will cover a range of topics including special functions, differential equations, and statistical methods, with a focus on practical applications in structural analysis, fluid dynamics, and material science. My aim is to provide you with a solid mathematical foundation to support your engineering studies and future career. About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Applied Mathematics",
+    "section": "",
+    "text": "Importance of Special Functions in Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nSyllabus of the Course\n\n\n\n\n\n\nsyllabus\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/session2/index.html",
+    "href": "posts/session2/index.html",
     "title": "Beta and Gamma Functions",
     "section": "",
     "text": "In this session, we will delve into the Beta and Gamma functions, two fundamental special functions widely used in various fields of science and engineering. These functions not only provide elegant solutions to complex integrals but also have profound applications in structural analysis, probability, statistics, and fluid dynamics. Understanding these functions and their properties is crucial for solving advanced engineering problems efficiently. We will explore their definitions, properties, interrelationship, and practical applications, particularly in structural analysis.\n\n\nThe Beta function, denoted as \\(B(x, y)\\), is a special function defined by the integral:\n\\[B(x, y) = \\int_0^1 t^{x-1} (1-t)^{y-1} \\, dt \\quad \\text{for} \\; x, y &gt; 0\\]\nProperties: - Symmetry: The Beta function is symmetric in its arguments, meaning \\(B(x, y) = B(y, x)\\). - Relation to Gamma Function: \\(B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\) - Integral Representation: The Beta function can also be represented as:\n\\[\n  B(x, y) = 2 \\int_0^{\\frac{\\pi}{2}} (\\sin \\theta)^{2x-1} (\\cos \\theta)^{2y-1} \\, d\\theta\n\\]\n\nConnection to Binomial Coefficients: For integers \\(m\\) and \\(n\\):\n\n\\[\n  B(m, n) = \\frac{(m-1)!(n-1)!}{(m+n-1)!}\n\\]\n\n\n\nThe Gamma function, denoted as \\(\\Gamma(x)\\), extends the factorial function to real and complex numbers. It is defined by the integral:\n\\[\\Gamma(x) = \\int_0^\\infty t^{x-1} e^{-t} \\, dt \\quad \\text{for} \\; x &gt; 0\\]\n\n\n\n\n\n\nProperties:\n\n\n\n\nRecurrence Relation: The Gamma function satisfies the recurrence relation \\(\\Gamma(x+1) = x \\Gamma(x)\\).\nFactorial Relation: For positive integers \\(n\\), \\(\\Gamma(n) = (n-1)!\\).\nReflection Formula: The Gamma function has the reflection property:\n\n\n\n\\[\n  \\Gamma(1-x) \\Gamma(x) = \\frac{\\pi}{\\sin(\\pi x)}\n\\]\n\nMultiplication Theorem: For any positive integer \\(n\\):\n\n\\[\n  \\Gamma(nx) = \\frac{(2\\pi)^{\\frac{(1-n)}{2}} n^{nx - \\frac{1}{2}}}{n^{x - \\frac{1}{2}}} \\prod_{k=0}^{n-1} \\Gamma \\left(x + \\frac{k}{n}\\right)\n\\]\n\n\n\nThe Beta and Gamma functions are related through the following formula:\n\\[B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\]\nThis relationship is particularly useful for converting between the two functions and leveraging their properties in various applications."
   },
   {
-    "objectID": "posts/session1/index.html#introduction-to-the-session",
-    "href": "posts/session1/index.html#introduction-to-the-session",
+    "objectID": "posts/session2/index.html#introduction-to-the-session",
+    "href": "posts/session2/index.html#introduction-to-the-session",
     "title": "Beta and Gamma Functions",
     "section": "",
     "text": "In this session, we will delve into the Beta and Gamma functions, two fundamental special functions widely used in various fields of science and engineering. These functions not only provide elegant solutions to complex integrals but also have profound applications in structural analysis, probability, statistics, and fluid dynamics. Understanding these functions and their properties is crucial for solving advanced engineering problems efficiently. We will explore their definitions, properties, interrelationship, and practical applications, particularly in structural analysis.\n\n\nThe Beta function, denoted as \\(B(x, y)\\), is a special function defined by the integral:\n\\[B(x, y) = \\int_0^1 t^{x-1} (1-t)^{y-1} \\, dt \\quad \\text{for} \\; x, y &gt; 0\\]\nProperties: - Symmetry: The Beta function is symmetric in its arguments, meaning \\(B(x, y) = B(y, x)\\). - Relation to Gamma Function: \\(B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\) - Integral Representation: The Beta function can also be represented as:\n\\[\n  B(x, y) = 2 \\int_0^{\\frac{\\pi}{2}} (\\sin \\theta)^{2x-1} (\\cos \\theta)^{2y-1} \\, d\\theta\n\\]\n\nConnection to Binomial Coefficients: For integers \\(m\\) and \\(n\\):\n\n\\[\n  B(m, n) = \\frac{(m-1)!(n-1)!}{(m+n-1)!}\n\\]\n\n\n\nThe Gamma function, denoted as \\(\\Gamma(x)\\), extends the factorial function to real and complex numbers. It is defined by the integral:\n\\[\\Gamma(x) = \\int_0^\\infty t^{x-1} e^{-t} \\, dt \\quad \\text{for} \\; x &gt; 0\\]\n\n\n\n\n\n\nProperties:\n\n\n\n\nRecurrence Relation: The Gamma function satisfies the recurrence relation \\(\\Gamma(x+1) = x \\Gamma(x)\\).\nFactorial Relation: For positive integers \\(n\\), \\(\\Gamma(n) = (n-1)!\\).\nReflection Formula: The Gamma function has the reflection property:\n\n\n\n\\[\n  \\Gamma(1-x) \\Gamma(x) = \\frac{\\pi}{\\sin(\\pi x)}\n\\]\n\nMultiplication Theorem: For any positive integer \\(n\\):\n\n\\[\n  \\Gamma(nx) = \\frac{(2\\pi)^{\\frac{(1-n)}{2}} n^{nx - \\frac{1}{2}}}{n^{x - \\frac{1}{2}}} \\prod_{k=0}^{n-1} \\Gamma \\left(x + \\frac{k}{n}\\right)\n\\]\n\n\n\nThe Beta and Gamma functions are related through the following formula:\n\\[B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\]\nThis relationship is particularly useful for converting between the two functions and leveraging their properties in various applications."
   },
   {
-    "objectID": "posts/session1/index.html#detailed-explanation",
-    "href": "posts/session1/index.html#detailed-explanation",
+    "objectID": "posts/session2/index.html#detailed-explanation",
+    "href": "posts/session2/index.html#detailed-explanation",
     "title": "Beta and Gamma Functions",
     "section": "Detailed Explanation",
     "text": "Detailed Explanation\n\nBeta Function\nThe Beta function arises in the context of evaluating certain integrals that appear in probability and statistics, especially in the computation of Beta distributions. Its symmetry property is given by:\n\\[B(x, y) = B(y, x)\\]\nThis property simplifies many calculations where the Beta function is involved.\n\n\nGamma Function\nThe Gamma function generalizes the concept of factorials to non-integer values. It plays a crucial role in various branches of mathematics and applied sciences, including complex analysis, combinatorics, and statistical mechanics.\nThe recurrence relation:\n\\[\\Gamma(x+1) = x \\Gamma(x)\\]\nillustrates that the Gamma function at \\(x+1\\) is \\(x\\) times the Gamma function at \\(x\\), aligning with the factorial function’s property where \\(n! = n \\cdot (n-1)!\\).\nFor integer values, the Gamma function simplifies to:\n\\[\\Gamma(n) = (n-1)!\\]\n\n\nRelationship Between Beta and Gamma Functions\nThe relationship:\n\\[B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\]\nis fundamental in various areas, such as statistical distributions and complex integrals. This formula can be derived using integration techniques and properties of the Gamma function."
   },
   {
-    "objectID": "posts/session1/index.html#applications-in-engineering",
-    "href": "posts/session1/index.html#applications-in-engineering",
+    "objectID": "posts/session2/index.html#applications-in-engineering",
+    "href": "posts/session2/index.html#applications-in-engineering",
     "title": "Beta and Gamma Functions",
     "section": "Applications in Engineering",
     "text": "Applications in Engineering\nUnderstanding Beta and Gamma functions, and their interrelationship is crucial in many engineering fields:\n\nProbability and Statistics: In reliability engineering and quality control, Beta distributions model the time-to-failure of components.\nStructural Analysis: Gamma functions appear in the solutions of differential equations that describe the behavior of structures under loads.\nFluid Dynamics: Both functions are used in solving problems involving fluid flow and heat transfer.\n\n\nExamples in Structural Analysis\n\nBeam Deflection Analysis:\n\nIn structural engineering, the deflection of beams under various loading conditions can be analyzed using differential equations. The solutions to these differential equations often involve Gamma functions. For instance, the deflection \\(y(x)\\) of a simply supported beam under a uniform load can be expressed in terms of special functions, including Gamma functions, to precisely determine the deflection curve.\n\nVibration Analysis of Structures:\n\nThe natural frequencies and mode shapes of structures such as beams and plates are determined by solving eigenvalue problems involving differential equations. The solutions to these problems often use Gamma functions to express the mode shapes and frequencies analytically. This is crucial for designing structures to avoid resonant frequencies that could lead to failure.\n\n\nThis foundational knowledge of special functions equips engineers with analytical tools to tackle complex problems efficiently and effectively."
