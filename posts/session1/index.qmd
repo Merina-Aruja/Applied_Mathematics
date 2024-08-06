@@ -7,10 +7,7 @@ image: "image.jpg"
 execute: 
   enabled: true
 ---
----
-title: "Beta and Gamma Functions: Definitions, Properties, Relationship, and Applications in Civil Engineering"
-format: pdf
----
+
 
 # Beta Function
 The Beta function, denoted as $\beta(m, n)$, is defined as:
@@ -44,28 +41,18 @@ where $\text{Re}(m) > 0$ and $\text{Re}(n) > 0$.
    for positive integers $m$ and $n$.
 
 # Gamma Function
-The Gamma function, denoted as $\Gamma(z)$, is defined for $\text{Re}(z) > 0$ by the improper integral:
+The Gamma function, denoted as $\Gamma(n)$, is defined for $\text{Re}(n) > 0$ by the improper integral:
 
 $$
-\Gamma(z) = \int_0^\infty t^{z-1} e^{-t} \, dt
+\Gamma(n) = \int_0^\infty x^{n-1} e^{-x} \, dt
 $$
 
-For $z = n$, where $n$ is a positive integer, the definition becomes:
 
-$$
-\Gamma(n) = \int_0^\infty t^{n-1} e^{-t} \, dt
-$$
-
-Substituting $t = x$:
-
-$$
-\Gamma(n) = \int_0^\infty x^{n-1} e^{-x} \, dx
-$$
 
 ## Properties of the Gamma Function
 1. **Reduction Formula**: 
    $$
-   \Gamma(z+1) = z \Gamma(z)
+   \Gamma(n+1) = n \Gamma(n)
    $$
 
 2. **Relation to Factorials**: 
@@ -75,29 +62,29 @@ $$
    $$
 
 ## Proof of the Reduction Formula
-To derive the reduction formula $\Gamma(z+1) = z \Gamma(z)$, we start from the definition:
+To derive the reduction formula $\Gamma(n+1) = z \Gamma(n)$, we start from the definition:
 
 $$
-\Gamma(z+1) = \int_0^\infty t^z e^{-t} \, dt
+\Gamma(n+1) = \int_0^\infty x^n e^{-x} \, dx
 $$
 
 Using integration by parts, let:
 $$
-u = t^z \quad \text{and} \quad dv = e^{-t} \, dt
+u = x^n \quad \text{and} \quad dv = e^{-x} \, dx
 $$
 $$
-du = z t^{z-1} \, dt \quad \text{and} \quad v = -e^{-t}
+du = n x^{n-1} \, dx \quad \text{and} \quad v = -e^{-x}
 $$
 
 Then,
 $$
-\Gamma(z+1) = \left. -t^z e^{-t} \right|_0^\infty + \int_0^\infty z t^{z-1} e^{-t} \, dt
+\Gamma(n+1) = \left. -x^n e^{-x} \right|_0^\infty + \int_0^\infty n x^{n-1} e^{-x} \, dx
 $$
 
-The boundary term $\left. -t^z e^{-t} \right|_0^\infty$ evaluates to 0, since $t^z e^{-t}$ tends to 0 as $t$ approaches both 0 and $\infty$. Thus,
+The boundary term $\left. -x^n e^{-x} \right|_0^\infty$ evaluates to 0, since $x^n e^{-x}$ tends to 0 as $x$ approaches both 0 and $\infty$. Thus,
 
 $$
-\Gamma(z+1) = z \int_0^\infty t^{z-1} e^{-t} \, dt = z \Gamma(z)
+\Gamma(n+1) = z \int_0^\infty x^{n-1} e^{-x} \, dt = n \Gamma(n)
 $$
 
 # Relationship Between Beta and Gamma Functions (with Proof)

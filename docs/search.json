@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Applied Mathematics",
     "section": "",
-    "text": "Importance of Special Functions in Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions: Definitions, Properties, Relationship, and Applications in Civil Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nSyllabus of the Course\n\n\n\n\n\n\nsyllabus\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\nNo matching items"
+    "text": "Importance of Special Functions in Engineering\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nBeta and Gamma Functions\n\n\n\n\n\n\nsession\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\n\n\n\n\n\n\nSyllabus of the Course\n\n\n\n\n\n\nsyllabus\n\n\n\n\n\n\n\n\n\nAug 2, 2024\n\n\nMerina Aruja\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/session1/index.html",
     "href": "posts/session1/index.html",
     "title": "Beta and Gamma Functions",
     "section": "",
-    "text": "In this session, we will delve into the Beta and Gamma functions, two fundamental special functions widely used in various fields of science and engineering. These functions not only provide elegant solutions to complex integrals but also have profound applications in structural analysis, probability, statistics, and fluid dynamics. Understanding these functions and their properties is crucial for solving advanced engineering problems efficiently. We will explore their definitions, properties, interrelationship, and practical applications, particularly in structural analysis.\n\n\nThe Beta function, denoted as \\(B(x, y)\\), is a special function defined by the integral:\n\\[B(x, y) = \\int_0^1 t^{x-1} (1-t)^{y-1} \\, dt \\quad \\text{for} \\; x, y &gt; 0\\]\nProperties: - Symmetry: The Beta function is symmetric in its arguments, meaning \\(B(x, y) = B(y, x)\\). - Relation to Gamma Function: \\(B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\) - Integral Representation: The Beta function can also be represented as:\n\\[\n  B(x, y) = 2 \\int_0^{\\frac{\\pi}{2}} (\\sin \\theta)^{2x-1} (\\cos \\theta)^{2y-1} \\, d\\theta\n\\]\n\nConnection to Binomial Coefficients: For integers \\(m\\) and \\(n\\):\n\n\\[\n  B(m, n) = \\frac{(m-1)!(n-1)!}{(m+n-1)!}\n\\]\n\n\n\nThe Gamma function, denoted as \\(\\Gamma(x)\\), extends the factorial function to real and complex numbers. It is defined by the integral:\n\\[\\Gamma(x) = \\int_0^\\infty t^{x-1} e^{-t} \\, dt \\quad \\text{for} \\; x &gt; 0\\]\n\n\n\n\n\n\nProperties:\n\n\n\n\nRecurrence Relation: The Gamma function satisfies the recurrence relation \\(\\Gamma(x+1) = x \\Gamma(x)\\).\nFactorial Relation: For positive integers \\(n\\), \\(\\Gamma(n) = (n-1)!\\).\nReflection Formula: The Gamma function has the reflection property:\n\n\n\n\\[\n  \\Gamma(1-x) \\Gamma(x) = \\frac{\\pi}{\\sin(\\pi x)}\n\\]\n\nMultiplication Theorem: For any positive integer \\(n\\):\n\n\\[\n  \\Gamma(nx) = \\frac{(2\\pi)^{\\frac{(1-n)}{2}} n^{nx - \\frac{1}{2}}}{n^{x - \\frac{1}{2}}} \\prod_{k=0}^{n-1} \\Gamma \\left(x + \\frac{k}{n}\\right)\n\\]\n\n\n\nThe Beta and Gamma functions are related through the following formula:\n\\[B(x, y) = \\frac{\\Gamma(x) \\Gamma(y)}{\\Gamma(x + y)}\\]\nThis relationship is particularly useful for converting between the two functions and leveraging their properties in various applications."
+    "text": "The Beta function, denoted as \\(\\beta(m, n)\\), is defined as:\n\\[\n\\beta(m, n) = \\int_0^1 x^{m-1} (1 - x)^{n-1} \\, dx\n\\]\nwhere \\(\\text{Re}(m) &gt; 0\\) and \\(\\text{Re}(n) &gt; 0\\).\n\n\n\nSymmetry: \\[\n\\beta(m, n) = \\beta(n, m)\n\\]\nConnection with the Gamma Function: \\[\n\\beta(m, n) = \\frac{\\Gamma(m) \\Gamma(n)}{\\Gamma(m + n)}\n\\]\nIntegral Representation: \\[\n\\beta(m, n) = 2 \\int_0^{\\pi/2} (\\sin \\theta)^{2m-1} (\\cos \\theta)^{2n-1} \\, d\\theta\n\\]\nValue for Positive Integers: \\[\n\\beta(m, n) = \\frac{(m-1)!(n-1)!}{(m+n-1)!}\n\\] for positive integers \\(m\\) and \\(n\\)."
   },
   {
     "objectID": "posts/session1/index.html#introduction-to-the-session",
@@ -68,5 +68,33 @@
     "title": "Beta and Gamma Functions",
     "section": "Applications in Engineering",
     "text": "Applications in Engineering\nUnderstanding Beta and Gamma functions, and their interrelationship is crucial in many engineering fields:\n\nProbability and Statistics: In reliability engineering and quality control, Beta distributions model the time-to-failure of components.\nStructural Analysis: Gamma functions appear in the solutions of differential equations that describe the behavior of structures under loads.\nFluid Dynamics: Both functions are used in solving problems involving fluid flow and heat transfer.\n\n\nExamples in Structural Analysis\n\nBeam Deflection Analysis:\n\nIn structural engineering, the deflection of beams under various loading conditions can be analyzed using differential equations. The solutions to these differential equations often involve Gamma functions. For instance, the deflection \\(y(x)\\) of a simply supported beam under a uniform load can be expressed in terms of special functions, including Gamma functions, to precisely determine the deflection curve.\n\nVibration Analysis of Structures:\n\nThe natural frequencies and mode shapes of structures such as beams and plates are determined by solving eigenvalue problems involving differential equations. The solutions to these problems often use Gamma functions to express the mode shapes and frequencies analytically. This is crucial for designing structures to avoid resonant frequencies that could lead to failure.\n\n\nThis foundational knowledge of special functions equips engineers with analytical tools to tackle complex problems efficiently and effectively."
+  },
+  {
+    "objectID": "posts/session1/index.html#properties-of-the-beta-function",
+    "href": "posts/session1/index.html#properties-of-the-beta-function",
+    "title": "Beta and Gamma Functions",
+    "section": "",
+    "text": "Symmetry: \\[\n\\beta(m, n) = \\beta(n, m)\n\\]\nConnection with the Gamma Function: \\[\n\\beta(m, n) = \\frac{\\Gamma(m) \\Gamma(n)}{\\Gamma(m + n)}\n\\]\nIntegral Representation: \\[\n\\beta(m, n) = 2 \\int_0^{\\pi/2} (\\sin \\theta)^{2m-1} (\\cos \\theta)^{2n-1} \\, d\\theta\n\\]\nValue for Positive Integers: \\[\n\\beta(m, n) = \\frac{(m-1)!(n-1)!}{(m+n-1)!}\n\\] for positive integers \\(m\\) and \\(n\\)."
+  },
+  {
+    "objectID": "posts/session1/index.html#properties-of-the-gamma-function",
+    "href": "posts/session1/index.html#properties-of-the-gamma-function",
+    "title": "Beta and Gamma Functions",
+    "section": "Properties of the Gamma Function",
+    "text": "Properties of the Gamma Function\n\nReduction Formula: \\[\n\\Gamma(n+1) = n \\Gamma(n)\n\\]\nRelation to Factorials: For a positive integer \\(n\\): \\[\n\\Gamma(n) = (n-1)!\n\\]"
+  },
+  {
+    "objectID": "posts/session1/index.html#proof-of-the-reduction-formula",
+    "href": "posts/session1/index.html#proof-of-the-reduction-formula",
+    "title": "Beta and Gamma Functions",
+    "section": "Proof of the Reduction Formula",
+    "text": "Proof of the Reduction Formula\nTo derive the reduction formula \\(\\Gamma(n+1) = z \\Gamma(n)\\), we start from the definition:\n\\[\n\\Gamma(n+1) = \\int_0^\\infty x^n e^{-x} \\, dx\n\\]\nUsing integration by parts, let: \\[\nu = x^n \\quad \\text{and} \\quad dv = e^{-x} \\, dx\n\\] \\[\ndu = n x^{n-1} \\, dx \\quad \\text{and} \\quad v = -e^{-x}\n\\]\nThen, \\[\n\\Gamma(n+1) = \\left. -x^n e^{-x} \\right|_0^\\infty + \\int_0^\\infty n x^{n-1} e^{-x} \\, dx\n\\]\nThe boundary term \\(\\left. -x^n e^{-x} \\right|_0^\\infty\\) evaluates to 0, since \\(x^n e^{-x}\\) tends to 0 as \\(x\\) approaches both 0 and \\(\\infty\\). Thus,\n\\[\n\\Gamma(n+1) = z \\int_0^\\infty x^{n-1} e^{-x} \\, dt = n \\Gamma(n)\n\\]"
+  },
+  {
+    "objectID": "posts/session1/index.html#proof",
+    "href": "posts/session1/index.html#proof",
+    "title": "Beta and Gamma Functions",
+    "section": "Proof",
+    "text": "Proof\nStarting with the definition of the Beta function:\n\\[\n\\beta(m, n) = \\int_0^1 x^{m-1} (1 - x)^{n-1} \\, dx\n\\]\nWe use the integral representations of the Gamma function:\n\\[\n\\Gamma(m) = \\int_0^\\infty t^{m-1} e^{-t} \\, dt\n\\] \\[\n\\Gamma(n) = \\int_0^\\infty u^{n-1} e^{-u} \\, du\n\\]\nConsider the double integral:\n\\[\nI = \\int_0^\\infty \\int_0^\\infty \\frac{x^{m-1} y^{n-1}}{(x+y)^{m+n}} e^{-x-y} \\, dx \\, dy\n\\]\nWe make the substitutions \\(x = tu\\) and \\(y = t(1-u)\\) with \\(t = x + y\\) and \\(u = \\frac{x}{x+y}\\). The Jacobian of this transformation is \\(t\\).\nSo, the integral becomes:\n\\[\nI = \\int_0^1 \\int_0^\\infty (tu)^{m-1} [t(1-u)]^{n-1} t e^{-t} \\, dt \\, du\n\\]\nSimplifying, we get:\n\\[\nI = \\int_0^1 u^{m-1} (1-u)^{n-1} \\, du \\int_0^\\infty t^{m+n-1} e^{-t} \\, dt\n\\]\nThe second integral is \\(\\Gamma(m+n)\\), and the first integral is \\(\\beta(m, n)\\). Thus, we have:\n\\[\n\\beta(m, n) \\Gamma(m+n) = \\Gamma(m) \\Gamma(n)\n\\]\nRearranging gives:\n\\[\n\\beta(m, n) = \\frac{\\Gamma(m) \\Gamma(n)}{\\Gamma(m+n)}\n\\]\nThis completes the proof of the relationship between the Beta and Gamma functions."
   }
 ]
