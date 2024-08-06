@@ -62,7 +62,7 @@ $$
    $$
 
 ## Proof of the Reduction Formula
-To derive the reduction formula $\Gamma(n+1) = z \Gamma(n)$, we start from the definition:
+To derive the reduction formula $\Gamma(n+1) = n\Gamma(n)$, we start from the definition:
 
 $$
 \Gamma(n+1) = \int_0^\infty x^n e^{-x} \, dx
