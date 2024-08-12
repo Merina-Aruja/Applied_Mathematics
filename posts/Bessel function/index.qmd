@@ -21,13 +21,9 @@ $$
 
 For integer orders $n$, the function $J_n(x)$ can be expressed as a series expansion:
 
-$$
-J_n(x) = \sum_{r=0}^{\infty} \frac{(-1)^r}{r! \Gamma(r+n+1)} \left(\frac{x}{2}\right)^{2r+n}
-$$
+$$J_n(x) = \sum_{r=0}^{\infty} \frac{(-1)^r}{r! \Gamma(r+n+1)} \left(\frac{x}{2}\right)^{2r+n}$$
 
-$$
-J_-n(x) = \sum_{r=0}^{\infty} \frac{(-1)^r}{r! \Gamma(r-n+1)} \left(\frac{x}{2}\right)^{2r-n}
-$$
+$$J_-n(x) = \sum_{r=0}^{\infty} \frac{(-1)^r}{r! \Gamma(r-n+1)} \left(\frac{x}{2}\right)^{2r-n}$$
 
 ## 2. Expansions of Specific Bessel Functions
 

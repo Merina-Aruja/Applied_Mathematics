@@ -144,7 +144,7 @@
     "href": "posts/Bessel function/index.html#bessel-functions-of-the-first-kind",
     "title": "Bessels Function",
     "section": "1. Bessel Functions of the First Kind",
-    "text": "1. Bessel Functions of the First Kind\nBessel functions of the first kind, \\(J_n(x)\\), are defined as solutions to Bessel’s differential equation:\n\\[\nx^2 \\frac{d^2y}{dx^2} + x \\frac{dy}{dx} + (x^2 - n^2)y = 0\n\\]\nFor integer orders \\(n\\), the function \\(J_n(x)\\) can be expressed as a series expansion:\n\\[\nJ_n(x) = \\sum_{r=0}^{\\infty} \\frac{(-1)^r}{r! \\Gamma(r+n+1)} \\left(\\frac{x}{2}\\right)^{2r+n}\n\\]"
+    "text": "1. Bessel Functions of the First Kind\nBessel functions of the first kind, \\(J_n(x)\\), are defined as solutions to Bessel’s differential equation:\n\\[\nx^2 \\frac{d^2y}{dx^2} + x \\frac{dy}{dx} + (x^2 - n^2)y = 0\n\\]\nFor integer orders \\(n\\), the function \\(J_n(x)\\) can be expressed as a series expansion:\n\\[J_n(x) = \\sum_{r=0}^{\\infty} \\frac{(-1)^r}{r! \\Gamma(r+n+1)} \\left(\\frac{x}{2}\\right)^{2r+n}\\]\n\\[J_-n(x) = \\sum_{r=0}^{\\infty} \\frac{(-1)^r}{r! \\Gamma(r-n+1)} \\left(\\frac{x}{2}\\right)^{2r-n}\\]"
   },
   {
     "objectID": "posts/Bessel function/index.html#expansions-of-specific-bessel-functions",
