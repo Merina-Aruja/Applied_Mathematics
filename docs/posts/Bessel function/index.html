@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Merina Aruja">
+<meta name="dcterms.date" content="2024-08-02">
 
-<title>Applied Mathematics – Applied_Mathematics</title>
+<title>Bessels Function – Applied_Mathematics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,17 +99,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Applied_Mathematics</span>
     </a>
   </div>
@@ -149,7 +120,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -172,258 +143,115 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Applied Mathematics</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Bessels Function</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">session</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Merina Aruja </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 2, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="session">session <span class="quarto-category-count">(4)</span></div><div class="category" data-category="syllabus">syllabus <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="session" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1723454886112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
-<div class="thumbnail">
-<p><a href="./posts/Bessel function/index.html" class="no-external"></a></p><a href="./posts/Bessel function/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/Bessel function/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/Bessel function/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Bessel function/index.html" class="no-external">Bessels Function</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Bessel function/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Bessel function/index.html" class="no-external">In this session, we will explore Bessel functions, an essential class of special functions that frequently arise in engineering and applied mathematics. Bessel functions…<span class="math inline"></span><span class="math inline"></span><span class="math inline"></span><span class="math inline"></span></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Bessel function/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="session" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722579767928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="564">
-<div class="thumbnail">
-<p><a href="./posts/Module-1/index.html" class="no-external"></a></p><a href="./posts/Module-1/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/Module-1/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/Module-1/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Module-1/index.html" class="no-external">Importance of Special Functions in Engineering</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Module-1/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Module-1/index.html" class="no-external">Special functions are mathematical functions that arise frequently in applied mathematics, physics, and engineering. They are solutions to specific types of differential…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Module-1/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="news,code,analysis" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722578738977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="session" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722935397605" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="685">
-<div class="thumbnail">
-<p><a href="./posts/session1/index.html" class="no-external"></a></p><a href="./posts/session1/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/session1/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/session1/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/session1/index.html" class="no-external">Beta and Gamma Functions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/session1/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/session1/index.html" class="no-external">The Beta function, denoted as <span class="math inline">\(\beta(m, n)\)</span>, is defined as:</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/session1/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="session" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722937968525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="685">
-<div class="thumbnail">
-<p><a href="./posts/session2/index.html" class="no-external"></a></p><a href="./posts/session2/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/session2/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/session2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/session2/index.html" class="no-external">Bessels Function</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/session2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/session2/index.html" class="no-external">The Beta function, denoted as <span class="math inline">\(\beta(m, n)\)</span>, is defined as:</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/session2/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="syllabus" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722935206672" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Syllabus of the Course</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('syllabus'); return false;">
-syllabus
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">
-
-<section id="module-1" class="level3">
-
+<section id="introduction-to-the-session" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-the-session">Introduction to the Session</h2>
+<p>In this session, we will explore Bessel functions, an essential class of special functions that frequently arise in engineering and applied mathematics. Bessel functions, particularly those of the first kind, denoted as <span class="math inline">\(J_n(x)\)</span>, are solutions to Bessel’s differential equation and are instrumental in solving problems involving cylindrical or spherical symmetry. These functions have significant applications in various engineering fields, including structural analysis, acoustics, heat conduction, and wave propagation. We will focus on the expansions of the Bessel functions <span class="math inline">\(J_0\)</span>, <span class="math inline">\(J_1\)</span>, and <span class="math inline">\(J_{\frac{1}{2}}\)</span>, explore their generating functions, solve related problems, and discuss their practical uses in Civil Engineering.</p>
 </section>
-<section id="module-2" class="level3">
-
+<section id="bessel-functions-of-the-first-kind" class="level2">
+<h2 class="anchored" data-anchor-id="bessel-functions-of-the-first-kind">1. Bessel Functions of the First Kind</h2>
+<p>Bessel functions of the first kind, <span class="math inline">\(J_n(x)\)</span>, are defined as solutions to Bessel’s differential equation:</p>
+<p><span class="math display">\[
+x^2 \frac{d^2y}{dx^2} + x \frac{dy}{dx} + (x^2 - n^2)y = 0
+\]</span></p>
+<p>For integer orders <span class="math inline">\(n\)</span>, the function <span class="math inline">\(J_n(x)\)</span> can be expressed as a series expansion:</p>
+<p><span class="math display">\[
+J_n(x) = \sum_{r=0}^{\infty} \frac{(-1)^r}{r! \Gamma(r+n+1)} \left(\frac{x}{2}\right)^{2r+n}
+\]</span></p>
+</section>
+<section id="expansions-of-specific-bessel-functions" class="level2">
+<h2 class="anchored" data-anchor-id="expansions-of-specific-bessel-functions">2. Expansions of Specific Bessel Functions</h2>
+<section id="a.-bessel-function-j_0x" class="level3">
+<h3 class="anchored" data-anchor-id="a.-bessel-function-j_0x">a. Bessel Function <span class="math inline">\(J_0(x)\)</span></h3>
+<p>The Bessel function <span class="math inline">\(J_0(x)\)</span> is the solution to Bessel’s equation when <span class="math inline">\(n = 0\)</span>:</p>
+<p><span class="math display">\[
+J_0(x) = \sum_{r=0}^{\infty} \frac{(-1)^r}{(r!)^2} \left(\frac{x}{2}\right)^{2r}
+\]</span></p>
+<p>This function appears in problems involving circular symmetry, such as heat conduction in a cylindrical object.</p>
+</section>
+<section id="b.-bessel-function-j_1x" class="level3">
+<h3 class="anchored" data-anchor-id="b.-bessel-function-j_1x">b. Bessel Function <span class="math inline">\(J_1(x)\)</span></h3>
+<p>For <span class="math inline">\(n = 1\)</span>, the Bessel function <span class="math inline">\(J_1(x)\)</span> is given by:</p>
+<p><span class="math display">\[
+J_1(x) = \sum_{r=0}^{\infty} \frac{(-1)^r}{r!(r+1)!} \left(\frac{x}{2}\right)^{2r+1}
+\]</span></p>
+<p>This function is crucial in the analysis of vibrations and wave propagation in cylindrical structures.</p>
+</section>
+<section id="c.-bessel-function-j_frac12x" class="level3">
+<h3 class="anchored" data-anchor-id="c.-bessel-function-j_frac12x">c.&nbsp;Bessel Function <span class="math inline">\(J_{\frac{1}{2}}(x)\)</span></h3>
+<p>The Bessel function <span class="math inline">\(J_{\frac{1}{2}}(x)\)</span> is particularly interesting because it can be expressed in terms of elementary functions:</p>
+<p><span class="math display">\[
+J_{\frac{1}{2}}(x) = \sqrt{\frac{2}{\pi x}} \sin(x)
+\]</span></p>
+<p>This function is often encountered in problems involving spherical symmetry, such as in wave propagation and quantum mechanics.</p>
+</section>
+</section>
+<section id="generating-function-of-bessel-functions" class="level2">
+<h2 class="anchored" data-anchor-id="generating-function-of-bessel-functions">3. Generating Function of Bessel Functions</h2>
+<p>The generating function for Bessel functions of the first kind is a powerful tool that simplifies the computation of these functions. It is given by:</p>
+<p><span class="math display">\[
+e^{\frac{x}{2}(t - \frac{1}{t})} = \sum_{n=-\infty}^{\infty} J_n(x) t^n
+\]</span></p>
+<p>This generating function can be used to derive various identities and properties of Bessel functions, which are useful in solving complex engineering problems.</p>
+</section>
+<section id="practical-applications-in-civil-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="practical-applications-in-civil-engineering">4. Practical Applications in Civil Engineering</h2>
+<section id="a.-vibration-analysis-of-cylindrical-structures" class="level3">
+<h3 class="anchored" data-anchor-id="a.-vibration-analysis-of-cylindrical-structures">a. Vibration Analysis of Cylindrical Structures</h3>
+<p>Bessel functions are indispensable in analyzing the vibrations of cylindrical structures, such as beams, pipes, and columns. The natural frequencies of these structures are often solutions to equations involving Bessel functions. Understanding the behavior of these functions allows engineers to design structures that avoid resonant frequencies, ensuring stability and longevity.</p>
+</section>
+<section id="b.-heat-conduction-in-cylindrical-coordinates" class="level3">
+<h3 class="anchored" data-anchor-id="b.-heat-conduction-in-cylindrical-coordinates">b. Heat Conduction in Cylindrical Coordinates</h3>
+<p>In problems involving heat conduction in cylindrical coordinates, Bessel functions are used to express the temperature distribution within the object. For example, in a cylindrical rod subjected to a temperature gradient, the heat equation’s solution involves Bessel functions, enabling engineers to predict temperature changes over time and design efficient cooling systems.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Understanding Bessel functions and their properties is crucial for solving a wide range of engineering problems, particularly those involving cylindrical or spherical symmetry. By mastering the expansions of <span class="math inline">\(J_0\)</span>, <span class="math inline">\(J_1\)</span>, and <span class="math inline">\(J_{\frac{1}{2}}\)</span>, as well as the generating function, engineers can tackle complex problems in structural analysis, vibration analysis, and heat conduction with confidence. In the subsequent sessions, we will delve deeper into these functions, solving practical problems and exploring their extensive applications in Civil Engineering. ```</p>
 
 
 </section>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
