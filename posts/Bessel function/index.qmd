@@ -1,7 +1,7 @@
 ---
 title: "Bessels Function"
 author: "Merina Aruja"
-date: "2024-08-02"
+date: "2024-08-12"
 categories: [session]
 image: "image.jpg"
 execute: 
