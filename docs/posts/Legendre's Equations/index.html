@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Merina Aruja">
+<meta name="dcterms.date" content="2024-08-19">
 
-<title>Applied Mathematics – Applied_Mathematics</title>
+<title>Legendre’s Equations – Applied_Mathematics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,17 +99,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Applied_Mathematics</span>
     </a>
   </div>
@@ -149,7 +120,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -172,291 +143,116 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Applied Mathematics</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Legendre’s Equations</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">session</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Merina Aruja </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 19, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(1)</span></div><div class="category" data-category="session">session <span class="quarto-category-count">(5)</span></div><div class="category" data-category="syllabus">syllabus <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="session" data-listing-date-sort="1724005800000" data-listing-file-modified-sort="1724039691107" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="478">
-<div class="thumbnail">
-<p><a href="./posts/Legendre's Equations/index.html" class="no-external"></a></p><a href="./posts/Legendre's Equations/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/Legendre's Equations/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/Legendre's Equations/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Legendre's Equations/index.html" class="no-external">Legendre’s Equations</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Legendre's Equations/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Legendre's Equations/index.html" class="no-external">In this session, we explore the significance of Legendre’s equations, an important type of differential equation commonly encountered in physics and engineering. These…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Legendre's Equations/index.html" class="no-external">
-<div class="listing-date">
-Aug 19, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="session" data-listing-date-sort="1723401000000" data-listing-file-modified-sort="1723459437840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
-<div class="thumbnail">
-<p><a href="./posts/Bessel function/index.html" class="no-external"></a></p><a href="./posts/Bessel function/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/Bessel function/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/Bessel function/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Bessel function/index.html" class="no-external">Bessels Function</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Bessel function/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Bessel function/index.html" class="no-external">In this session, we will explore Bessel functions, an essential class of special functions that frequently arise in engineering and applied mathematics. Bessel functions…<span class="math inline"></span><span class="math inline"></span><span class="math inline"></span><span class="math inline"></span></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Bessel function/index.html" class="no-external">
-<div class="listing-date">
-Aug 12, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="session" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722579767928" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="564">
-<div class="thumbnail">
-<p><a href="./posts/Module-1/index.html" class="no-external"></a></p><a href="./posts/Module-1/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/Module-1/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/Module-1/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Module-1/index.html" class="no-external">Importance of Special Functions in Engineering</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Module-1/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Module-1/index.html" class="no-external">Special functions are mathematical functions that arise frequently in applied mathematics, physics, and engineering. They are solutions to specific types of differential…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Module-1/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="news,code,analysis" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722578738977" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/post-with-code/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/post-with-code/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/post-with-code/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('code'); return false;">
-code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('analysis'); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/post-with-code/index.html" class="no-external">This is a post with executable code.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="session" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722935397605" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="685">
-<div class="thumbnail">
-<p><a href="./posts/session1/index.html" class="no-external"></a></p><a href="./posts/session1/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/session1/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/session1/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/session1/index.html" class="no-external">Beta and Gamma Functions</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/session1/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/session1/index.html" class="no-external">The Beta function, denoted as <span class="math inline">\(\beta(m, n)\)</span>, is defined as:</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/session1/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="session" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722937968525" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="685">
-<div class="thumbnail">
-<p><a href="./posts/session2/index.html" class="no-external"></a></p><a href="./posts/session2/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/session2/image.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/session2/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/session2/index.html" class="no-external">Bessels Function</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/session2/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('session'); return false;">
-session
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/session2/index.html" class="no-external">The Beta function, denoted as <span class="math inline">\(\beta(m, n)\)</span>, is defined as:</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/session2/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="syllabus" data-listing-date-sort="1722537000000" data-listing-file-modified-sort="1722935206672" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Syllabus of the Course</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('syllabus'); return false;">
-syllabus
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">
-
-<section id="module-1" class="level3">
-
+<section id="legendres-equations-in-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="legendres-equations-in-engineering"><strong>Legendre’s Equations in Engineering</strong></h3>
+<section id="introduction-to-the-session" class="level4">
+<h4 class="anchored" data-anchor-id="introduction-to-the-session"><strong>Introduction to the Session</strong></h4>
+<p>In this session, we explore the significance of Legendre’s equations, an important type of differential equation commonly encountered in physics and engineering. These equations arise naturally in problems involving spherical symmetry, making them crucial in applications such as potential theory, electrostatics, and structural analysis. Legendre’s polynomials, which are solutions to these equations, are widely used in various engineering fields, particularly in Civil Engineering, to model complex geometries and boundary value problems. This session focuses on deriving Legendre’s equation, analyzing its solutions, solving related problems, and examining how it is applied in Civil Engineering.</p>
 </section>
-<section id="module-2" class="level3">
-
+<section id="legendres-equation-and-its-derivation" class="level4">
+<h4 class="anchored" data-anchor-id="legendres-equation-and-its-derivation"><strong>1. Legendre’s Equation and Its Derivation</strong></h4>
+<p>Legendre’s differential equation is given by:</p>
+<p><span class="math display">\[
+(1 - x^2) \frac{d^2y}{dx^2} - 2x \frac{dy}{dx} + n(n + 1)y = 0
+\]</span></p>
+<p>This equation arises when solving Laplace’s equation in spherical coordinates, specifically when dealing with problems with spherical symmetry. The equation is significant because its solutions, known as Legendre polynomials $ P_n(x) $, are orthogonal functions that play a vital role in mathematical modeling.</p>
+<p>The solutions to this equation are polynomials of degree $ n $ and are defined by:</p>
+<p><span class="math display">\[
+P_n(x) = \frac{1}{2^n n!} \frac{d^n}{dx^n} \left[(x^2 - 1)^n\right]
+\]</span></p>
+</section>
+<section id="properties-of-legendre-polynomials" class="level4">
+<h4 class="anchored" data-anchor-id="properties-of-legendre-polynomials"><strong>2. Properties of Legendre Polynomials</strong></h4>
+<ul>
+<li><strong>Orthogonality</strong>: Legendre polynomials are orthogonal over the interval $ [-1, 1] $ with respect to the weight function $ w(x) = 1 $:</li>
+</ul>
+<p><span class="math display">\[
+\int_{-1}^{1} P_n(x) P_m(x) \, dx = 0 \quad \text{for} \ n \neq m
+\]</span></p>
+<ul>
+<li><strong>Recurrence Relation</strong>: Legendre polynomials satisfy a recurrence relation, which is useful for efficient computation:</li>
+</ul>
+<p><span class="math display">\[
+(n + 1)P_{n+1}(x) = (2n + 1)xP_n(x) - nP_{n-1}(x)
+\]</span></p>
+<ul>
+<li><strong>Generating Function</strong>: The generating function for Legendre polynomials is:</li>
+</ul>
+<p><span class="math display">\[
+\frac{1}{\sqrt{1 - 2xt + t^2}} = \sum_{n=0}^{\infty} P_n(x)t^n
+\]</span></p>
+</section>
+<section id="applications-in-civil-engineering" class="level4">
+<h4 class="anchored" data-anchor-id="applications-in-civil-engineering"><strong>3. Applications in Civil Engineering</strong></h4>
+<p>Legendre polynomials and their corresponding differential equations find applications in various areas of Civil Engineering:</p>
+<ol type="1">
+<li><p><strong>Potential Flow and Fluid Mechanics</strong>: In problems involving potential flow around a sphere or cylinder, Legendre polynomials help express the velocity potential or stream function.</p></li>
+<li><p><strong>Structural Analysis of Curved Surfaces</strong>: In the analysis of structures with curved surfaces, such as domes or shells, the governing equations involve Legendre polynomials. These functions aid in solving the differential equations governing stress and displacement.</p></li>
+</ol>
+</section>
+<section id="example-problem" class="level4">
+<h4 class="anchored" data-anchor-id="example-problem"><strong>4. Example Problem</strong></h4>
+<p><strong>Problem</strong>: Solve Legendre’s differential equation for $ n = 2 $ and find the corresponding polynomial.</p>
+<p><strong>Solution</strong>:</p>
+<p>For $ n = 2 $, the equation becomes:</p>
+<p><span class="math display">\[
+(1 - x^2) \frac{d^2y}{dx^2} - 2x \frac{dy}{dx} + 6y = 0
+\]</span></p>
+<p>The corresponding Legendre polynomial is:</p>
+<p><span class="math display">\[
+P_2(x) = \frac{1}{2^2 \cdot 2!} \frac{d^2}{dx^2} \left[(x^2 - 1)^2\right] = \frac{1}{8} \cdot 4(3x^2 - 1) = \frac{3}{2}x^2 - \frac{1}{2}
+\]</span></p>
+<p>This solution can be used in modeling potential flow or structural deformation for specific boundary conditions in engineering problems.</p>
+</section>
+<section id="conclusion" class="level4">
+<h4 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h4>
+<p>Legendre’s equations and polynomials are indispensable in the analysis and design of systems with spherical or curved geometries in Civil Engineering. By understanding the properties and solutions of these equations, engineers can effectively address challenges in structural analysis, fluid mechanics, and other critical areas. The upcoming sessions will further explore the application of Legendre polynomials in complex civil engineering scenarios.</p>
 
 
 </section>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Aug 2, 2024
-</div>
-<div class="listing-author">
-Merina Aruja
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

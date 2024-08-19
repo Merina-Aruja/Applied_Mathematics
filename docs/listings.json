@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Legendre's Equations/index.html",
       "/posts/Bessel function/index.html",
       "/posts/Module-1/index.html",
       "/posts/post-with-code/index.html",
